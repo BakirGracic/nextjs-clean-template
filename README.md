@@ -20,9 +20,9 @@ npx create-next-app@latest <PROJECT_NAME_HERE> --example="https://github.com/Bak
 - Tubopack `yes`
 - Customized Import Alias (@) `no`
 
-### NextJS version `15.0.4`
+### NextJS version `^15`
 
-### React version `19`
+### React version `^19`
 
 ### Other packages
 
