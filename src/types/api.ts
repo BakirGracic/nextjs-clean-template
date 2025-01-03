@@ -1,6 +1,6 @@
-type apiResponse = {
-	id: string;
-	page: string;
-	count: string;
-	items: { [key: string]: any }[][];
-};
+// type apiResponse = {
+// 	id: string;
+// 	page: string;
+// 	count: string;
+// 	items: { [key: string]: unknown }[][];
+// };

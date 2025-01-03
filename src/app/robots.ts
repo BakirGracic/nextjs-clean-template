@@ -5,7 +5,8 @@ export default function robots(): MetadataRoute.Robots {
 		rules: {
 			userAgent: '*',
 			allow: '/',
+			disallow: ['/dashboard'],
 		},
-		sitemap: 'http://localhost:3000',
+		sitemap: `${process.env.NEXT_PUBLIC_APP_URL}/sitemap.xml`,
 	};
 }

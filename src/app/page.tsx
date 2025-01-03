@@ -1,4 +1,4 @@
-import Component from '@/components/homepage/Component';
+import Component from '@/features/hp_example_component/components/ExampleComponent';
 
 export default function Homepage() {
 	return (
