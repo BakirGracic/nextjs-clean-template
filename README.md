@@ -28,6 +28,8 @@ npx create-next-app@latest <PROJECT_NAME_HERE> --example="https://github.com/Bak
 
 -   Removed NextJS boilerplate for cleanliness
 -   Added `autoprefixer` plugin
+-   Added most common files
+-   Integrated `feature` based file structure
 
 ### License
 
