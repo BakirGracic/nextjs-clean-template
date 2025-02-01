@@ -1,6 +1,6 @@
 ## nextjs-clean-template
 
-Clean template for new NextJS projects
+Clean (OPINIONATED) template for new NextJS projects
 
 ### Package Manager `npm`
 
@@ -12,24 +12,24 @@ npx create-next-app@latest <PROJECT_NAME_HERE> --example="https://github.com/Bak
 
 ### `npx` Creation Settings
 
--   TypeScript `yes`
--   ESLint `yes`
--   TailwindCSS `yes`
--   `src/` directory `yes`
--   App Router `yes`
--   Tubopack `yes`
--   Customized Import Alias (@) `no`
+- TypeScript `yes`
+- ESLint `yes`
+- TailwindCSS `yes`
+- `src/` directory `yes`
+- App Router `yes`
+- Tubopack `yes`
+- Customized Import Alias (@) `no`
 
-### NextJS version `^15`
+### NextJS version `15`
 
-### React version `^19`
+### React version `19`
 
 ### Other Notes
 
--   Removed NextJS boilerplate for cleanliness
--   Added `autoprefixer` plugin
--   Added most common files
--   Integrated `feature` based file structure
+- Removed NextJS boilerplate
+- Implemented Tailwind v4
+- Added most common files
+- Integrated `feature` based file structure
 
 ### License
 

@@ -1,5 +1,6 @@
-import '@/css/tailwind-base.css';
-import type { Metadata } from 'next';
+import '@/css/tailwind.css';
+import { InterFont, RobotoMonoFont } from '@/lib/font';
+import { type Metadata } from 'next';
 
 export const metadata: Metadata = {
 	title: 'Clean template for new NextJS projects',
@@ -9,9 +10,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html>
-			<body className='antialiased'>
-                {children}
-            </body>
+			<body className={`${InterFont.variable} ${RobotoMonoFont.variable}`}>{children}</body>
 		</html>
 	);
 }
