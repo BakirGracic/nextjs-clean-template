@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			url: `${process.env.NEXT_PUBLIC_APP_URL}`,
 			lastModified: new Date(),
 			changeFrequency: 'yearly',
-			priority: 1,
-		},
+			priority: 1
+		}
 	];
 }

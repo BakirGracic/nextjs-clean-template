@@ -1,7 +1,5 @@
-/node_modules
-
-/.next/
-
+node_modules
 certificates
-
+.next
 next-env.d.ts
+tsconfig.tsbuildinfo

@@ -20,15 +20,10 @@ npx create-next-app@latest <PROJECT_NAME_HERE> --example="https://github.com/Bak
 - Tubopack `yes`
 - Customized Import Alias (@) `no`
 
-### NextJS version `15`
-
-### React version `19`
-
-### Other Notes
+### Notes
 
 - Removed NextJS boilerplate
-- Implemented Tailwind v4
-- Added most common files
+- Added common files
 - Integrated `feature` based file structure
 
 ### License

@@ -1,37 +1,37 @@
 name: Next.js CD Pipeline for PRODUCTION
 
 concurrency:
-  group: production
-  cancel-in-progress: true
+    group: production
+    cancel-in-progress: true
 
 on:
-  push:
-    branches:
-      - production
-  workflow_dispatch:
+    push:
+        branches:
+            - production
+    workflow_dispatch:
 
 jobs:
-  build-and-deploy:
-    runs-on: self-hosted
-    environment: production
+    build-and-deploy:
+        runs-on: self-hosted
+        environment: production
 
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
 
-      - name: Use Node.js
-        uses: actions/setup-node@v4
+            - name: Use Node.js
+              uses: actions/setup-node@v4
 
-      - name: Install NPM Deps (ci)
-        run: npm ci
+            - name: Install NPM Deps (ci)
+              run: npm ci
 
-      - name: Build Next.js
-        run: |
-          npx next telemetry disable
-          npm run build
+            - name: Build Next.js
+              run: |
+                  npx next telemetry disable
+                  npm run build
 
-      - name: Start Next.js
-        env:
-          CUSTOM_ENV_VAR: 'custom_value'
-        run: |
-          pm2 reload all --update-env
+            - name: Start Next.js
+              env:
+                  CUSTOM_ENV_VAR: 'custom_value'
+              run: |
+                  pm2 reload all --update-env
